@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from '@mui/material';
 
 type EducationProps = {
   degree: string;
@@ -8,14 +8,11 @@ type EducationProps = {
 
 const EducationCard = ({ degree, institution, period }: EducationProps) => (
   <Card sx={{ mb: 2 }}>
-    <CardContent sx={{ fontFamily: "cursive" }}>
-      <Typography variant="h6" sx={{ fontFamily: "inherit" }}>
+    <CardContent>
+      <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
         {degree}
       </Typography>
-      <Typography
-        variant="body2"
-        sx={{ fontFamily: "inherit", color: "text.secondary" }}
-      >
+      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
         {institution}, {period}
       </Typography>
     </CardContent>

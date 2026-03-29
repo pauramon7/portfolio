@@ -1,11 +1,11 @@
-import { Box, Typography, IconButton, Avatar } from "@mui/material";
-import { Brightness4, Brightness7 } from "@mui/icons-material";
-import Section from "./components/Section";
-import ExperienceCard from "./components/ExperienceCard";
-import EducationCard from "./components/EducationCard";
-import BadgeGroup from "./components/BadgeGroup";
-import CertificationList from "./components/CertificationList";
-import { useColorMode } from "./theme";
+import { Box, Typography, IconButton, Avatar } from '@mui/material';
+import { Brightness4 } from '@mui/icons-material';
+import Section from './components/Section';
+import ExperienceCard from './components/ExperienceCard';
+import EducationCard from './components/EducationCard';
+import BadgeGroup from './components/BadgeGroup';
+import CertificationList from './components/CertificationList';
+import { useColorMode } from './theme';
 
 const CV = () => {
   const { toggleColorMode } = useColorMode();
@@ -13,23 +13,23 @@ const CV = () => {
   return (
     <Box
       sx={{
-        maxWidth: "md",
-        mx: "auto",
+        maxWidth: 'md',
+        mx: 'auto',
         p: 4,
       }}
     >
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
           mb: 3,
         }}
       >
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
+            display: 'flex',
+            alignItems: 'center',
             gap: 2,
           }}
         >
@@ -39,21 +39,21 @@ const CV = () => {
             sx={{ width: 80, height: 80 }}
           />
           <Box>
-            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+            <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
               Pau Ramon Rodriguez
             </Typography>
             <Typography
               variant="subtitle1"
               sx={{
-                color: "text.secondary",
-                fontSize: "0.9rem",
+                color: 'text.secondary',
+                fontSize: '0.9rem',
               }}
             >
               Software Developer
             </Typography>
             <Typography
               variant="body2"
-              sx={{ color: "text.secondary", fontSize: "0.8rem" }}
+              sx={{ color: 'text.secondary', fontSize: '0.8rem' }}
             >
               Rubi, Barcelona | pauramon7@gmail.com
             </Typography>
@@ -69,19 +69,29 @@ const CV = () => {
           role="Software Developer Intern"
           company="Qualifyze"
           period="Oct 2024 - Present"
-          description="Contributed to development in an agile team, ensuring code quality, performance, and design collaboration."
+          description="Contributed to various internal company projects within a collaborative, agile team environment.
+Engaged in interactive team practices such as pair programming to maintain code quality and knowledge sharing.
+Developed both backend and frontend features.
+Collaborated with UX/UI designers by providing constructive feedback on design challenges.
+Managed and optimized database operations to support application performance.
+Participated in frontend and backend testing to improve product stability and quality."
         />
         <ExperienceCard
           role="Intern"
           company="Socade Informática SL"
           period="Mar 2024 - Jul 2024"
-          description="Improved documentation, automated tasks with Microsoft workspace, and led the redesign of the company website for better design."
+          description="Started with documentation updates, including technical manuals and internal guides.
+Supported the team with efficiency-focused tasks using Excel and Access to automate repetitive work.
+Took the lead in redesigning and updating the company's website, enhancing its usability and visual appeal."
         />
         <ExperienceCard
           role="Intern"
           company="Power PC"
           period="Apr 2022 - Jul 2022"
-          description="Repaired and maintained hardware, managed inventory, led store in supervisor's absence, and resolved technical issues to ensure customer satisfaction"
+          description="Repaired desktops, laptops, and other hardware, ensuring devices met operational standards.
+Managed inventory and maintained order across technical equipment and supplies.
+Acted as temporary store manager during supervisor absences, handling client interactions and daily operations.
+Assisted in diagnosing and resolving technical issues, supporting customer satisfaction and loyalty."
         />
       </Section>
 
@@ -101,10 +111,10 @@ const CV = () => {
       <Section title="Languages">
         <BadgeGroup
           items={[
-            "Spanish (Fluent)",
-            "Catalan (Fluent)",
-            "English (B2)",
-            "French (Basic)",
+            'Spanish (Fluent)',
+            'Catalan (Fluent)',
+            'English (B2)',
+            'French (Basic)',
           ]}
         />
       </Section>
@@ -112,7 +122,7 @@ const CV = () => {
       <Section title="Certifications">
         <CertificationList
           certifications={[
-            "First Certificate in English (B2) - Cambridge 2023",
+            'First Certificate in English (B2) - Cambridge 2023',
           ]}
         />
       </Section>

@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from '@mui/material';
 
 const CertificationList = ({
   certifications,
@@ -9,9 +9,7 @@ const CertificationList = ({
     {certifications.map((certification, index) => (
       <Card key={index} sx={{ mb: 2 }}>
         <CardContent>
-          <Typography variant="body2" sx={{ fontFamily: "cursive" }}>
-            {certification}
-          </Typography>
+          <Typography variant="body2">{certification}</Typography>
         </CardContent>
       </Card>
     ))}

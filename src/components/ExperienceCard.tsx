@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from '@mui/material';
 
 type ExperienceProps = {
   role: string;
@@ -14,27 +14,20 @@ const ExperienceCard = ({
   description,
 }: ExperienceProps) => (
   <Card sx={{ mb: 2 }}>
-    <CardContent sx={{ fontFamily: "cursive" }}>
-      <Typography
-        variant="h6"
-        sx={{ fontSize: "1.1rem", fontWeight: "bold", fontFamily: "inherit" }}
-      >
+    <CardContent>
+      <Typography variant="h6" sx={{ fontSize: '1.1rem', fontWeight: 'bold' }}>
         {role} - {company}
       </Typography>
       <Typography
         variant="body2"
         sx={{
-          fontSize: "1rem",
-          color: "text.secondary",
-          fontFamily: "inherit",
+          fontSize: '1rem',
+          color: 'text.secondary',
         }}
       >
         {period}
       </Typography>
-      <Typography
-        variant="body2"
-        sx={{ mt: 1, fontSize: "0.9rem", fontFamily: "inherit" }}
-      >
+      <Typography variant="body2" sx={{ mt: 1, fontSize: '0.9rem' }}>
         {description}
       </Typography>
     </CardContent>
